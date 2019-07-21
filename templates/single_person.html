@@ -1,0 +1,22 @@
+{% from 'macros.html' import peoplebook_profile %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> {{ profile.first_name}} {{ profile.last_name }} </title>
+  <link rel="stylesheet" href="/static/App.css">
+  <link rel="stylesheet" href="/static/index.css">
+</head>
+
+<body>
+  <div id="root">
+    <div class="people">
+      {{ peoplebook_profile(profile) }}
+    </div>
+  </div>
+</body>
+
+</html>

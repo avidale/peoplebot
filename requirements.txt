@@ -1,0 +1,4 @@
+flask
+gunicorn
+pymongo==3.4.0
+autolink
